@@ -1,0 +1,137 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #6e6e6e;
+    }
+
+    h1, h2, h3, h4{
+        font-family: 'Michroma', sans-serif;
+        color: #464746;
+    }
+
+    .navbar {
+        background-color: #231f20;
+    }
+
+    .navbar-brand img {
+        max-height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: 'Michroma', sans-serif;
+        color: #fff !important;
+    }
+
+    .about-section {
+        position: relative;
+        background-image: url('../images/background.avif');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white!important;
+        padding: 50px 0;
+        z-index: 1;
+    }
+
+    .partners-section {
+        background: url('../images/partner.avif') repeat center center;
+        padding: 50px 0;
+    }
+
+    .footer {
+        background-color: #373334;
+        color: #fff;
+        padding: 16px 0 0 0;
+        font-size: x-small;
+    }
+
+    .fw-iconbox {
+        text-align: center;
+        margin-bottom: 30px;
+        background: rgba(255,255,255,0.85);
+        border-radius: 10px;
+        padding: 24px 16px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        transition: transform 0.3s;
+    }
+
+    .fw-iconbox:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    }
+
+    .fw-iconbox img {
+        max-width: 70px;
+        margin-bottom: 15px;
+    }
+
+    .fw-iconbox h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .fw-iconbox p {
+        color: #444;
+    }
+
+    .partner-link img {
+        max-width: 170px;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .partner-link img:hover {
+        transform: scale(1.08) rotate(-3deg);
+    }
+
+    hr {
+        border-color: tomato;
+        margin: 20px 0;
+    }
+
+    .to-top {
+        position: fixed;
+        margin-bottom: -20px;
+        bottom: 20px;
+        right: 20px;
+        background: chocolate;
+        color: #fff;
+        padding: 10px;
+        display: none;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .to-top.show {
+        display: block;
+    }
+
+    
+    @media (max-width: 576px) {
+        .fw-special__title {
+            font-size: 1.5rem;
+        }
+
+        .fw-iconbox h3 {
+            font-size: 1.2rem;
+        }
+
+        .fw-iconbox p {
+            font-size: 0.9rem;
+        }
+
+        .partner-link img {
+            max-width: 120px;
+        }
+
+        .footer .row {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+    }

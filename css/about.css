@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .about-section {
+    background: linear-gradient(135deg, white, white);
+    color: black !important;
+  }
+  .about-title, .vm-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+  }
+  .about-text, .vm-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .underline-yellow {
+    width: 60px;
+    height: 4px;
+    background: #f5c518;
+    border-radius: 2px;
+  }
+  .ms-highlight {
+    color: #f5c518;
+  }
+  .hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-effect:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+  }
