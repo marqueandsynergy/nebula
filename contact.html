@@ -129,7 +129,7 @@
 
   <script>
     (function(){
-      emailjs.init("YZw-BVIwiO6HWSTcX"); 
+      emailjs.init("cs42DCyzdd7_GhrQd"); 
     })();
 
     // Handle form submit
@@ -137,7 +137,7 @@
       event.preventDefault();
       document.getElementById("form-status").innerHTML = "<div class='alert alert-info'>Sending...</div>";
 
-      emailjs.sendForm("service_ac7l1ot","template_2o4g69f", this)
+      emailjs.sendForm("service_q1nmz3h","template_f3nweii", this)
         .then(function() {
           document.getElementById("form-status").innerHTML = "<div class='alert alert-success'>Message sent successfully!</div>";
           document.getElementById("contact-form").reset();
