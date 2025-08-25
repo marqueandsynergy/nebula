@@ -134,7 +134,24 @@
         </div>
       </div>
     </div>
+     <div id="to-top" class="to-top "><i class="bi bi-arrow-up"></i></div>
   </footer>
+  
+  <script>
+    // To Top Button Visibility
+    window.addEventListener('scroll', () => {
+      const toTop = document.getElementById('to-top');
+      if (window.scrollY > 100) {
+        toTop.classList.add('show');
+      } else {
+        toTop.classList.remove('show');
+      }
+    });
+
+    // Scroll to top on click
+    document.getElementById('to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });</script>
     <script>
     // Fade-in on scroll
     document.addEventListener("DOMContentLoaded", function() {
