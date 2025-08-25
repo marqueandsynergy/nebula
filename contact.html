@@ -124,11 +124,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+   <!-- Footer -->
+      <footer class="footer">
     <div class="container">
-      <div class="row" style="margin-left: 100px; ">
-        <div class="col-md-3 col-12 ">
+      <div class="row" style="margin-left: 100px;">
+        <div class="col-md-3 col-12">
           <a href="/">
             <img src="./images/alogo.avif" alt="Logo" class="img-fluid">
           </a>
@@ -146,8 +146,24 @@
         </div>
       </div>
     </div>
+     <div id="to-top" class="to-top "><i class="bi bi-arrow-up"></i></div>
   </footer>
 
+<script>
+    // To Top Button Visibility
+    window.addEventListener('scroll', () => {
+      const toTop = document.getElementById('to-top');
+      if (window.scrollY > 100) {
+        toTop.classList.add('show');
+      } else {
+        toTop.classList.remove('show');
+      }
+    });
+
+    // Scroll to top on click
+    document.getElementById('to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });</script>
   <script>
     (function(){
       emailjs.init("cs42DCyzdd7_GhrQd"); 
